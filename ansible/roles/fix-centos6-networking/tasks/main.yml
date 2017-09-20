@@ -19,4 +19,4 @@ block:
       job: '/etc/cron.d/check-restart-network.sh'
       minute: '*/2'
       name: 'check-restart-network'
-  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '6'
+when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '6'
