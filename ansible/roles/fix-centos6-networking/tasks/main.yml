@@ -9,7 +9,7 @@
 - name: check-restart-network script templated
   template:
     src: 'check-restart-network.sh.j2'
-    dest: '/etc/cron.d/check-restart.network.sh'
+    dest: '/etc/cron.d/check-restart-network.sh'
     mode: '0700'
     owner: 'root'
   when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '6'
