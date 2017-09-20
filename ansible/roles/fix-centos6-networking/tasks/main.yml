@@ -16,6 +16,6 @@
 - name: check-restart-network script scheduled via cron
   cron:
     job: '/etc/cron.d/check-restart-network.sh'
-    minute: '*/2'
+    minute: '*/5'
     name: 'check-restart-network'
   when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '6'
